@@ -31,6 +31,7 @@ return {
                 "gopls",
 		"biome",
 		"elixirls",
+		"omnisharp",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -49,6 +50,7 @@ return {
                                 enable_snippets = true,
                                 warn_style = true,
                             },
+						    ['rust-analyzer'] = {},
                         },
                     })
                     vim.g.zig_fmt_parse_errors = 0
