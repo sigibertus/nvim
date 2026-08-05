@@ -1,11 +1,12 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+	branch = "master",
     build = ":TSUpdate",
     config = function()
         require("nvim-treesitter.configs").setup({
             -- A list of parser names, or "all"
             ensure_installed = {
-                "vimdoc", "javascript", "typescript", "lua", "html", "elixir", "rust"
+                "vimdoc", "javascript", "typescript", "lua", "html", "elixir", "rust", "hlsl",
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
